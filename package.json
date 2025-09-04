@@ -1,0 +1,38 @@
+{
+    "name": "debug-demo",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "start": "ts-node src/server.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "express": "^5.1.0"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.2",
+        "@types/node": "^22.15.24",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3",
+        "jest": "^30.0.0",
+        "ts-jest": "^29.2.5",
+        "@types/jest": "^29.5.14"
+    },
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "node",
+        "roots": [
+            "<rootDir>/test"
+        ],
+        "testMatch": [
+            "**/*.test.ts"
+        ],
+        "transform": {
+            "^.+\\.ts$": "ts-jest"
+        }
+    }
+}
